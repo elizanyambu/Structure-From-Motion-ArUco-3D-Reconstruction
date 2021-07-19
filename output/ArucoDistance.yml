@@ -1,0 +1,23 @@
+%YAML:1.0
+---
+distance: 8.5004071833985080e+01
+arucocenter1Cam1: !!opencv-matrix
+   rows: 1
+   cols: 2
+   dt: d
+   data: [ 4.3050000000000000e+02, 374. ]
+arucocenter2Cam1: !!opencv-matrix
+   rows: 1
+   cols: 2
+   dt: d
+   data: [ 165., 4.1375000000000000e+02 ]
+arucocenter1Cam2: !!opencv-matrix
+   rows: 1
+   cols: 2
+   dt: d
+   data: [ 1.4165000000000000e+03, 1250. ]
+arucocenter2Cam2: !!opencv-matrix
+   rows: 1
+   cols: 2
+   dt: d
+   data: [ 5.3775000000000000e+02, 1.2267500000000000e+03 ]

@@ -6,12 +6,14 @@ Therefore, we need to estimate the poses of a calibrated camera from two images,
 The actual scale factor is recovered by detecting an object of a known size (here we use ArUco Marker to detect the distance of two markers). 
 The algorithm consists of the following steps:
 
-Find camera parameters
-Find corresponding points
-Estimate fundamental and essential matrix
-Detect Aruco Marker and calculate the distance.
-Recover the actual scale, resulting in a metric reconstruction
-Determine the 3D location of the matches points using triangulation
+1. Find camera parameters
+2. Find corresponding points
+3. Estimate fundamental and essential matrix
+4. Detect Aruco Marker and calculate the distance.
+5. Recover the actual scale, resulting in a metric reconstruction
+6. Determine the 3D location of the matches points using triangulation
+
+
 The code we implemented takes in two 2D pictures of an object from different angles as input and it outputs a 3D point cloud that captures the structure of the original object. 
 In this project we consider camera calibration and extrinsic properties such as optical center, focal length etc. We first calibrate the camera using a checkerboard to get the intrinsic parameters. 
 In order to calculate the fundamental matrix for transformation from image A to image B we calculates t In this project, we work with the SfM algorithm. Our algorithm further uses markers to validate the distance calculation from multiple views. 
